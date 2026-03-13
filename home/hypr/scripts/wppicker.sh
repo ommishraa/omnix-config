@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # === CONFIG ===
-WALLPAPER_DIR="$HOME/wallpapers"
+WALLPAPER_DIR="$HOME/om-works/omnix-config/home/wallpapers"
 SYMLINK_PATH="$HOME/.config/hypr/current_wallpaper"
 
 # 1. === WALLPAPER PICKER ===

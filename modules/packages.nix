@@ -15,9 +15,15 @@
     btop
 
     # hyprland ecosystem
-    swww          # wallpaper daemon
+    swww
     hyprlock
     hypridle
+
+    # useful for matugen workflows
+    imagemagick
+    fd
+    ripgrep
+    jq
 
     wl-clipboard
     cliphist
@@ -43,7 +49,7 @@
     hyprpicker
 
     # extras
-    blueman       # bluetooth applet
+    blueman
     yazi
     cava
   ];
