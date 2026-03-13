@@ -249,8 +249,8 @@
 # for matugen
 gradient = 1
 gradient_count = 2
-gradient_color_1 = '#343a3a'
-gradient_color_2 = '#80d4d7'
+gradient_color_1 = '#363a3e'
+gradient_color_2 = '#95cdf7'
 
 [smoothing]
 

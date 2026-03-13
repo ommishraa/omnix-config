@@ -18,12 +18,33 @@
     swww
     hyprlock
     hypridle
-
+    kitty
+    waybar
+    rofi
+    fastfetch
+    hyprpaper
+    swaynotificationcenter
+    libnotify
+    wlogout
+    cliphist
+    wl-clipboard
+ 
     # useful for matugen workflows
     imagemagick
     fd
     ripgrep
     jq
+    fzf
+    jq
+    tree-sitter
+    gcc
+    unzip
+    gnumake
+    python3
+    nodejs
+    rustc
+    cargo
+    python3Packages.pip
 
     wl-clipboard
     cliphist
@@ -47,6 +68,12 @@
 
     # color picker
     hyprpicker
+
+    # themes
+    rose-pine-cursor
+    hyprcursor
+    glib
+    coreutils
 
     # extras
     blueman
