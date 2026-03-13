@@ -45,5 +45,6 @@
     # extras
     blueman       # bluetooth applet
     yazi
+    cava
   ];
 }
