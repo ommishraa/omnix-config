@@ -12,6 +12,8 @@
     neovim
     vscode
     tree
+    chromium
+    firefox
 
     # monitoring
     btop

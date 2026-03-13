@@ -50,8 +50,12 @@
     isNormalUser = true;
     description = "om";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
     packages = with pkgs; [];
   };
+
+  # --- Programs ---
+  programs.zsh.enable = true;
 
   # --- Allow unfree packages ---
   nixpkgs.config.allowUnfree = true;

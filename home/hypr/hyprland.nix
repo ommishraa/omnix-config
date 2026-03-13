@@ -1,10 +1,5 @@
 { ... }:
 {
-  wayland.windowManager.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
   home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
   home.file.".config/hypr/keybinds.conf".source = ./keybinds.conf;
   home.file.".config/hypr/animations.conf".source = ./animations.conf;
