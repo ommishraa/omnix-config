@@ -1,10 +1,6 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    # terminal
-    kitty
-    tmux
-
     # dev
     git
     gh
@@ -17,15 +13,12 @@
 
     # monitoring
     btop
-    fastfetch
 
     # hyprland ecosystem
-    waybar
     hyprpaper
     swww          # wallpaper daemon
     hyprlock
     hypridle
-    rofi
 
     wl-clipboard
     cliphist
@@ -41,17 +34,11 @@
     # theming
     matugen
 
-    # notifications
-    swaynotificationcenter
-
     # audio
     pamixer
 
     # fonts
     nerd-fonts.jetbrains-mono
-
-    # power menu
-    wlogout
 
     # color picker
     hyprpicker

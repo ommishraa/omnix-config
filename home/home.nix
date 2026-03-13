@@ -13,6 +13,7 @@
     ./programs/wlogout/wlogout.nix
     ./programs/fastfetch/fastfetch.nix
     ./programs/tmux/tmux.nix
+    ./programs/zsh/zsh.nix
     ./hypr/hyprland.nix
     ./matugen/matugen.nix
   ];
