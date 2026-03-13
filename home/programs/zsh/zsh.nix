@@ -24,7 +24,7 @@
       }
     ];
 
-    initExtra = ''
+    initContent = ''
       # Fastfetch on startup
       fastfetch
 

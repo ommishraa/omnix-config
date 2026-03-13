@@ -17,9 +17,13 @@ The goal of this project is to maintain a modular and clean NixOS configuration 
 - **Modularization**: 
     - Updated `waybar`, `rofi`, and `fastfetch` to use `programs.<name>.enable = true`.
     - Integrated `swaynotificationcenter` and `wlogout` into their respective home modules.
+- **Rofi Setup**:
+    - Resolved a conflict where `programs.rofi.enable = true` was competing with a manual `home.file` definition for `config.rasi`.
+    - Fixed by setting `programs.rofi.configPath = ".config/rofi/config-hm.rasi";` to move the auto-generated config out of the way.
 - **Zsh Setup**:
     - Created `home/programs/zsh/zsh.nix`.
     - Integrated `zsh-autosuggestions`, `zsh-syntax-highlighting`, and the `powerlevel10k` theme.
+    - Updated `initExtra` to `initContent` to resolve Home Manager deprecation warnings.
     - Added `fastfetch` to the shell startup.
 - **Wallpapers**: Added a symlink for the `wallpapers` directory to `~/wallpapers` in `home.nix` to ensure compatibility with existing scripts.
 - **Cleanup**: Deleted redundant `home/swaync` and `home/wlogout` directories that were outside the `programs/` structure.
@@ -38,9 +42,8 @@ The goal of this project is to maintain a modular and clean NixOS configuration 
     - `wallpapers/`: Collection of wallpaper images.
 
 ## Next Steps
-- Apply the configuration using `sudo nixos-rebuild switch --flake .#nixos`.
-- Configure `p10k` manually if the wizard doesn't trigger.
 - Verify hardware-specific modules in `waybar` (battery/network names).
+- Configure `p10k` manually if the wizard doesn't trigger.
 - Explore Neovim configuration using the `matugen` Lua template.
 
 ---
