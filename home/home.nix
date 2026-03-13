@@ -3,6 +3,8 @@
   home.username = "om";
   home.homeDirectory = "/home/om";
 
+  home.file."wallpapers".source = ./wallpapers;
+
   imports = [
     ./programs/kitty/kitty.nix
     ./programs/rofi/rofi.nix
