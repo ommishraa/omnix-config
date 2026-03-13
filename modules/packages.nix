@@ -28,6 +28,8 @@
     wlogout
     cliphist
     wl-clipboard
+    waypaper
+    python3Packages.pillow
  
     # useful for matugen workflows
     imagemagick
