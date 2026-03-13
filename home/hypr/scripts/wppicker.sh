@@ -9,7 +9,7 @@ SELECTED_WALL=$(
   find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.jpeg" \) -exec basename {} \; |
     while read -r file; do
       echo -en "$file\0icon\x1f$WALLPAPER_DIR/$file\n"
-    done | rofi -dmenu -p "󰸉 Wallpaper"
+    done | rofi -dmenu -p "󰸉 Wallpaper" -theme ~/.config/rofi/wallpaper.rasi
 )
 
 [ -z "$SELECTED_WALL" ] && exit 1

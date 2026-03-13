@@ -65,6 +65,7 @@
 
     # fonts
     nerd-fonts.jetbrains-mono
+    font-awesome
 
     # color picker
     hyprpicker

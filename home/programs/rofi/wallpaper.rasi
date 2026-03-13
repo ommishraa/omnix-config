@@ -1,0 +1,95 @@
+@theme "/dev/null"
+@import "colors.rasi"
+
+configuration {
+    font: "JetBrainsMono Nerd Font 10";
+    show-icons: true;
+}
+
+window {
+    width: 1200px;
+    border: 2px solid;
+    border-color: @secondary-container;
+    border-radius: 15px;
+    background-color: @on-primary-fixed;
+}
+
+mainbox {
+    orientation: horizontal;
+    children: [ "previewbox", "listbox" ];
+    background-color: transparent;
+}
+
+previewbox {
+    width: 500px;
+    padding: 20px;
+    background-color: transparent;
+    background-image: url("~/.config/hypr/current_wallpaper", height);
+    children: [];
+}
+
+listbox {
+    spacing: 10px;
+    padding: 20px;
+    background-color: transparent;
+    orientation: vertical;
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    spacing: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: @on-primary;
+    text-color: @on-surface;
+    children: [ "textbox-prompt-colon", "entry" ];
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: "󰸉  ";
+    background-color: inherit;
+    text-color: inherit;
+}
+
+entry {
+    background-color: inherit;
+    text-color: inherit;
+    cursor: text;
+    placeholder: "Search wallpaper...";
+    placeholder-color: inherit;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    scrollbar: false;
+    spacing: 8px;
+    background-color: transparent;
+    text-color: @on-surface;
+}
+
+element {
+    spacing: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-color: @on-surface;
+    cursor: pointer;
+}
+
+element selected.normal {
+    background-color: @primary;
+    text-color: @on-secondary;
+}
+
+element-icon {
+    size: 48px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}

@@ -69,6 +69,12 @@
     LIBVA_DRIVER_NAME = "nvidia";
   };
 
+  # Display Manager
+    services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+  };
+
   # --- System version ---
   system.stateVersion = "25.11";
 }
