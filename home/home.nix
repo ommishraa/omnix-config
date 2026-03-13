@@ -1,13 +1,19 @@
 { pkgs, ... }:
-
 {
   home.username = "om";
   home.homeDirectory = "/home/om";
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
+  imports = [
+    ./programs/kitty/kitty.nix
+    ./programs/rofi/rofi.nix
+    ./programs/waybar/waybar.nix
+    ./programs/swaync/swaync.nix
+    ./programs/wlogout/wlogout.nix
+    ./programs/fastfetch/fastfetch.nix
+    ./programs/tmux/tmux.nix
+    ./hypr/hyprland.nix
+    ./matugen/matugen.nix
+  ];
 
   home.packages = with pkgs; [
     ripgrep

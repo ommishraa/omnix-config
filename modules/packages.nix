@@ -1,8 +1,6 @@
 { pkgs, ... }:
-
 {
   environment.systemPackages = with pkgs; [
-
     # terminal
     kitty
     tmux
@@ -12,7 +10,8 @@
     gh
     lazygit
     neovim
-    yazi
+    vscode
+    tree
 
     # monitoring
     btop
@@ -21,7 +20,9 @@
     # hyprland ecosystem
     waybar
     hyprpaper
+    swww          # wallpaper daemon
     hyprlock
+    hypridle
     rofi
 
     wl-clipboard
@@ -29,10 +30,32 @@
 
     grim
     slurp
-    swappy
+    satty
 
     brightnessctl
     playerctl
     networkmanagerapplet
+
+    # theming
+    matugen
+
+    # notifications
+    swaynotificationcenter
+
+    # audio
+    pamixer
+
+    # fonts
+    nerd-fonts.jetbrains-mono
+
+    # power menu
+    wlogout
+
+    # color picker
+    hyprpicker
+
+    # extras
+    blueman       # bluetooth applet
+    yazi
   ];
 }
