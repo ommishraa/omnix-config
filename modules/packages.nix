@@ -15,7 +15,6 @@
     btop
 
     # hyprland ecosystem
-    hyprpaper
     swww          # wallpaper daemon
     hyprlock
     hypridle
