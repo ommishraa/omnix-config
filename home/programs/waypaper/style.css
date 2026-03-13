@@ -1,0 +1,31 @@
+window {
+    background-color: alpha(@theme_bg_color, 0.05);
+}
+
+scrolledwindow {
+    background-color: transparent;
+}
+
+viewport {
+    background-color: transparent;
+}
+
+.thumbnail-button {
+    border-radius: 12px;
+    margin: 4px;
+    background-color: alpha(white, 0.05);
+}
+
+.thumbnail-button:hover {
+    background-color: alpha(white, 0.15);
+}
+
+headerbar {
+    background-color: alpha(@theme_bg_color, 0.1);
+    border-bottom: 1px solid alpha(white, 0.08);
+}
+
+button {
+    background-color: alpha(white, 0.08);
+    border-radius: 8px;
+}
