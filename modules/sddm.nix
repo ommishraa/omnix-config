@@ -1,86 +1,9 @@
-; hypr/hyprlock.conf
-; omnix-config — omarchy pixel style
-; Tokyo Night palette — sourced from matugen/colors.conf at runtime
-
-source = ~/.config/hypr/colors.conf
-
-general {
-    ignore_empty_input = true
+# modules/sddm.nix
+{ pkgs, ... }:
+{
+  services.displayManager.sddm = {
+    enable         = true;
+    wayland.enable = true;
+  };
 }
-
-# ── Background ─────────────────────────────────────────────
-background {
-    monitor =
-    path         = ~/.config/hypr/current_wallpaper
-    color        = rgb(1a1b26)
-    blur_passes  = 3
-}
-
-animations {
-    enabled = false
-}
-
-# ── Avatar ─────────────────────────────────────────────────
-# Circular profile picture, centered above OMNIX
-image {
-    monitor      =
-    path         = ~/.face
-    size         = 80
-    rounding     = -1
-    border_size  = 2
-    border_color = rgba(7aa2f7ff)
-    shadow_passes = 0
-
-    position = 0, 230
-    halign   = center
-    valign   = center
-}
-
-# ── OMNIX — pixel font label ───────────────────────────────
-label {
-    monitor     =
-    text        = OMNIX
-    color       = rgba(9ece6aff)
-    font_size   = 64
-    font_family = Press Start 2P
-
-    shadow_passes = 0
-
-    position = 0, 100
-    halign   = center
-    valign   = center
-}
-
-# ── Password input field ───────────────────────────────────
-# Matches omarchy exactly: wide, rounding=0, thin border
-input-field {
-    monitor =
-    size              = 650, 100
-    position          = 0, -120
-    halign            = center
-    valign            = center
-
-    inner_color       = rgba(ffffff00)
-    outer_color       = rgba(7aa2f7ff)
-    outline_thickness = 4
-    rounding          = 0
-
-    font_family       = JetBrainsMono Nerd Font
-    font_color        = rgba(a9b1d6ff)
-
-    placeholder_text  = Enter Password
-    check_color       = rgba(9ece6aff)
-    fail_text         = <i>$FAIL ($ATTEMPTS)</i>
-    fail_color        = rgba(f7768eff)
-
-    dots_size         = 0.3
-    dots_spacing      = 0.5
-    dots_center       = true
-
-    shadow_passes     = 0
-    fade_on_empty     = false
-}
-
-auth {
-    fingerprint:enabled = false
-}
+EOF
