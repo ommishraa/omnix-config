@@ -10,6 +10,7 @@
     tree
     chromium
     firefox
+    termius
 
     # monitoring
     btop
@@ -35,7 +36,6 @@
     imagemagick
     fd
     ripgrep
-    jq
     fzf
     jq
     tree-sitter
@@ -47,9 +47,6 @@
     rustc
     cargo
     python3Packages.pip
-
-    wl-clipboard
-    cliphist
 
     grim
     slurp
@@ -82,5 +79,8 @@
     blueman
     yazi
     cava
+
+    # icons
+    google-fonts
   ];
 }
