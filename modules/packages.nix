@@ -1,5 +1,20 @@
+# modules/packages.nix
 { pkgs, ... }:
 {
+  # ── Fonts ───────────────────────────────────────────────
+  # fonts.packages is the CORRECT way to install fonts on NixOS
+  # environment.systemPackages does NOT register fonts with fontconfig
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.noto
+    font-awesome
+    google-fonts
+  ];
+
+  fonts.fontDir.enable = true;
+  fonts.enableDefaultPackages = true;
+
+  # ── System packages ─────────────────────────────────────
   environment.systemPackages = with pkgs; [
     # dev
     git
@@ -31,7 +46,7 @@
     wl-clipboard
     waypaper
     python3Packages.pillow
- 
+
     # useful for matugen workflows
     imagemagick
     fd
@@ -47,11 +62,10 @@
     rustc
     cargo
     python3Packages.pip
-
+    file
     grim
     slurp
     satty
-
     brightnessctl
     playerctl
     networkmanagerapplet
@@ -61,10 +75,6 @@
 
     # audio
     pamixer
-
-    # fonts
-    nerd-fonts.jetbrains-mono
-    font-awesome
 
     # color picker
     hyprpicker
@@ -79,8 +89,5 @@
     blueman
     yazi
     cava
-
-    # icons
-    google-fonts
   ];
 }
