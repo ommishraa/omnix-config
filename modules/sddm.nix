@@ -6,4 +6,3 @@
     wayland.enable = true;
   };
 }
-EOF
