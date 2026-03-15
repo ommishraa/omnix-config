@@ -1,0 +1,110 @@
+
+# yazi/theme.toml
+# omnix-config — teal/tokyo night theme
+
+[flavor]
+use = ""
+
+[manager]
+cwd = { fg = "#9ece6a", bold = true }
+
+# Hovered
+hovered         = { fg = "#0e1415", bg = "#9cf1f3", bold = true }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#f9e2af", bold = true, italic = true, underline = true }
+find_position = { fg = "#f7768e", bg = "reset", bold = true, italic = true }
+
+# Marker
+marker_copied  = { fg = "#9ece6a", bg = "#9ece6a" }
+marker_cut     = { fg = "#f7768e", bg = "#f7768e" }
+marker_marked  = { fg = "#7aa2f7", bg = "#7aa2f7" }
+marker_selected = { fg = "#bb9af7", bg = "#bb9af7" }
+
+# Tab
+tab_active   = { fg = "#0e1415", bg = "#9cf1f3", bold = true }
+tab_inactive = { fg = "#9e99b0", bg = "#1a1b26" }
+tab_width    = 1
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#444b6a" }
+
+# Highlighting
+syntect_theme = "~/.config/yazi/Catppuccin-mocha.tmTheme"
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#1a1b26", bg = "#1a1b26" }
+
+# Mode
+mode_normal = { fg = "#0e1415", bg = "#9cf1f3", bold = true }
+mode_select = { fg = "#0e1415", bg = "#9ece6a", bold = true }
+mode_unset  = { fg = "#0e1415", bg = "#f7768e", bold = true }
+
+# Progress
+progress_label  = { fg = "#dde4e3", bold = true }
+progress_normal = { fg = "#7aa2f7", bg = "#1a1b26" }
+progress_error  = { fg = "#f7768e", bg = "#1a1b26" }
+
+# Permissions
+perm_type  = { fg = "#7aa2f7" }
+perm_read  = { fg = "#9ece6a" }
+perm_write = { fg = "#f7768e" }
+perm_exec  = { fg = "#f9e2af" }
+perm_sep   = { fg = "#444b6a" }
+
+[input]
+border   = { fg = "#7aa2f7" }
+title    = { fg = "#9cf1f3", bold = true }
+value    = { fg = "#dde4e3" }
+selected = { reversed = true }
+
+[select]
+border   = { fg = "#7aa2f7" }
+active   = { fg = "#9cf1f3", bold = true }
+inactive = { fg = "#9e99b0" }
+
+[tasks]
+border  = { fg = "#7aa2f7" }
+title   = { fg = "#9cf1f3", bold = true }
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "#1a1b26" }
+cand            = { fg = "#9cf1f3" }
+rest            = { fg = "#9e99b0" }
+desc            = { fg = "#bb9af7" }
+separator       = "  "
+separator_style = { fg = "#444b6a" }
+
+[help]
+on      = { fg = "#9cf1f3" }
+run     = { fg = "#bb9af7" }
+desc    = { fg = "#9e99b0" }
+hovered = { bg = "#1e2030", bold = true }
+footer  = { fg = "#0e1415", bg = "#9cf1f3" }
+
+[filetype]
+rules = [
+  # Images
+  { mime = "image/*", fg = "#9cf1f3" },
+  # Video
+  { mime = "video/*", fg = "#bb9af7" },
+  # Audio
+  { mime = "audio/*", fg = "#f9e2af" },
+  # Archives
+  { mime = "application/zip",    fg = "#f7768e" },
+  { mime = "application/gzip",   fg = "#f7768e" },
+  { mime = "application/x-tar",  fg = "#f7768e" },
+  # Docs
+  { mime = "application/pdf",    fg = "#e0af68" },
+  # Code
+  { mime = "text/*",             fg = "#9ece6a" },
+  # Dirs
+  { name = "*/", fg = "#7aa2f7", bold = true },
+  # Fallback
+  { name = "*", fg = "#dde4e3" },
+]

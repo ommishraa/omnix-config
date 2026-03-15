@@ -10,3 +10,4 @@ ln -sf ~/om-works/omnix-config/home/programs/wlogout ~/.config/wlogout
 ln -sf ~/om-works/omnix-config/home/programs/fastfetch ~/.config/fastfetch
 echo "All symlinks restored!"
 ln -sf ~/om-works/omnix-config/home/programs/gtk-3.0 ~/.config/gtk-3.0
+ln -sf ~/om-works/omnix-config/home/programs/yazi ~/.config/yazi
