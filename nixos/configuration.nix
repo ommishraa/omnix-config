@@ -48,7 +48,7 @@
   users.users.om = {
     isNormalUser = true;
     description  = "om";
-    extraGroups  = [ "networkmanager" "wheel" ];
+    extraGroups  = [ "networkmanager" "wheel" "input" ];
     shell        = pkgs.zsh;
     packages     = with pkgs; [];
   };

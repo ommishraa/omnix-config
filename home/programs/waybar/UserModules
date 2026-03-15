@@ -1,0 +1,43 @@
+{
+"custom/bluetooth": {
+    "format": "󰂯",
+    "on-click": "kitty --class floating-term -e bluetui",
+    "tooltip": true,
+    "tooltip-format": "Click: Bluetooth Manager (bluetui)"
+},
+
+"custom/wifi": {
+    "format": "󰤨",
+    "on-click": "kitty --class floating-term -e impala",
+    "tooltip": true,
+    "tooltip-format": "Click: WiFi Manager (impala)"
+},
+
+"custom/audio": {
+    "format": "󰕾",
+    "on-click": "kitty --class floating-term -e pulsemixer",
+    "tooltip": true,
+    "tooltip-format": "Click: Audio Mixer (pulsemixer)"
+},
+
+"custom/theme": {
+    "format": "󰏘",
+    "on-click": "$HOME/.config/hypr/scripts/theme-switch.sh",
+    "tooltip": true,
+    "tooltip-format": "Click: Switch Kitty Theme"
+},
+
+"custom/yazi": {
+    "format": "󰉋",
+    "on-click": "kitty --class floating-term -e yazi",
+    "tooltip": true,
+    "tooltip-format": "Click: File Manager (yazi)"
+},
+
+"custom/lazygit": {
+    "format": "󰊢",
+    "on-click": "kitty --class floating-term -e lazygit",
+    "tooltip": true,
+    "tooltip-format": "Click: LazyGit"
+}
+}
