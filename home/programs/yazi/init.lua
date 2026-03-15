@@ -1,8 +1,6 @@
 -- yazi/init.lua
 -- omnix-config — yazi plugins init
-
--- Git status indicators in file list
-require("git"):setup()
-
--- File icons
-require("icons"):setup()
+-- Note: git plugin requires yazi 26.1.22+
+-- Current nixpkgs version is 25.5.31
+-- Uncomment when yazi is updated in nixpkgs
+-- require("git"):setup()

@@ -1,7 +1,7 @@
 # yazi/yazi.toml
 # omnix-config — yazi file manager
 
-[mgr]
+[manager]
 ratio          = [1, 2, 4]   # panel ratios: parent, current, preview
 sort_by        = "natural"
 sort_sensitive = false

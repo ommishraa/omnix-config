@@ -1,7 +1,7 @@
 # yazi/keymap.toml
 # omnix-config — vim-style keybinds
 
-[mgr]
+[manager]
 keymap = [
   # ── Navigation ──────────────────────────────────────────
   { on = "k",         run = "arrow -1",              desc = "Up" },
