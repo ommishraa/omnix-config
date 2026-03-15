@@ -2,8 +2,6 @@
 { pkgs, ... }:
 {
   # ── Fonts ───────────────────────────────────────────────
-  # fonts.packages is the CORRECT way to install fonts on NixOS
-  # environment.systemPackages does NOT register fonts with fontconfig
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.noto
@@ -11,8 +9,30 @@
     google-fonts
   ];
 
-  fonts.fontDir.enable = true;
-  fonts.enableDefaultPackages = true;
+  fonts.fontDir.enable         = true;
+  fonts.enableDefaultPackages  = true;
+
+  # ── Shell ───────────────────────────────────────────────
+  programs.zsh = {
+    enable                    = true;
+    enableCompletion          = true;
+    autosuggestions.enable    = true;
+    syntaxHighlighting.enable = true;
+    ohMyZsh = {
+      enable  = true;
+      plugins = [
+        "git"
+        "z"
+        "fzf"
+        "direnv"
+        "thefuck"
+        "colored-man-pages"
+        "command-not-found"
+        "copypath"
+        "copyfile"
+      ];
+    };
+  };
 
   # ── System packages ─────────────────────────────────────
   environment.systemPackages = with pkgs; [
@@ -47,7 +67,7 @@
     waypaper
     python3Packages.pillow
 
-    # useful for matugen workflows
+    # matugen workflows
     imagemagick
     fd
     ripgrep
@@ -89,5 +109,20 @@
     blueman
     yazi
     cava
+
+    # ── NEW: shell enhancements ──────────────────────────
+    starship        # prompt
+    zoxide          # smart cd
+    eza             # better ls
+    bat             # better cat
+    thefuck         # auto-fix commands
+    tldr            # simple man pages
+    direnv          # auto .env loader
+
+    # ── NEW: yazi extras ────────────────────────────────
+    ueberzugpp      # image previews in yazi
+    ffmpegthumbnailer # video thumbnails in yazi
+    poppler         # PDF previews in yazi
+    file            # file type detection
   ];
 }
