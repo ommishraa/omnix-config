@@ -126,7 +126,6 @@
     zoxide
     eza
     bat
-    pay-respects
     tldr
     direnv
 
