@@ -303,21 +303,21 @@
 	]
 },
 
-"power-profiles-daemon": {
-  "format": "{icon} ",
-  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-  "tooltip": true,
-  "format-icons": {
-    "default": "",
-    "performance": "",
-    "balanced": "",
-    "power-saver": ""
-  }
-},
-
-"pulseaudio": {
-	"format": "{icon} {volume}%",
-	"format-bluetooth": "{icon} 󰂰 {volume}%",
+//"power-profiles-daemon": {
+//  "format": "{icon} ",
+//  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+//  "tooltip": true,
+//  "format-icons": {
+//    "default": "",
+//    "performance": "",
+//    "balanced": "",
+//    "power-saver": ""
+//  }
+//},
+//
+//"pulseaudio": {
+//	"format": "{icon} {volume}%",
+//	"format-bluetooth": "{icon} 󰂰 {volume}%",
 	"format-muted": "󰖁",
 	"format-icons": {
 		"headphone": "",

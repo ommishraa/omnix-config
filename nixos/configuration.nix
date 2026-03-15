@@ -67,7 +67,7 @@
     GBM_BACKEND               = "nvidia-drm";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     LIBVA_DRIVER_NAME         = "nvidia";
-    XCURSOR_THEME             = "rose-pine-cursor";
+    XCURSOR_THEME             = "BreezeX-RosePine-Linux";
     XCURSOR_SIZE              = "24";
   };
 
