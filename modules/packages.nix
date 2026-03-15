@@ -9,8 +9,8 @@
     google-fonts
   ];
 
-  fonts.fontDir.enable         = true;
-  fonts.enableDefaultPackages  = true;
+  fonts.fontDir.enable        = true;
+  fonts.enableDefaultPackages = true;
 
   # ── Shell ───────────────────────────────────────────────
   programs.zsh = {
@@ -25,7 +25,6 @@
         "z"
         "fzf"
         "direnv"
-        "pay-respects"
         "colored-man-pages"
         "command-not-found"
         "copypath"
@@ -57,6 +56,7 @@
     kitty
     waybar
     rofi
+    walker              # better app launcher
     fastfetch
     hyprpaper
     swaynotificationcenter
@@ -95,6 +95,17 @@
 
     # audio
     pamixer
+    pulsemixer          # audio TUI
+
+    # bluetooth & network TUIs
+    bluetui             # bluetooth TUI
+    impala              # wifi TUI
+
+    # docker
+    lazydocker          # docker TUI
+
+    # terminal extras
+    peaclock            # terminal clock
 
     # color picker
     hyprpicker
@@ -110,19 +121,26 @@
     yazi
     cava
 
-    # ── NEW: shell enhancements ──────────────────────────
-    starship        # prompt
-    zoxide          # smart cd
-    eza             # better ls
-    bat             # better cat
-    pay-respects         # auto-fix commands
-    tldr            # simple man pages
-    direnv          # auto .env loader
+    # shell enhancements
+    starship
+    zoxide
+    eza
+    bat
+    pay-respects
+    tldr
+    direnv
 
-    # ── NEW: yazi extras ────────────────────────────────
-    ueberzugpp      # image previews in yazi
-    ffmpegthumbnailer # video thumbnails in yazi
-    poppler         # PDF previews in yazi
-    file            # file type detection
+    # yazi extras
+    ueberzugpp
+    ffmpegthumbnailer
+    poppler
+
+    # ── LSP & formatters (for neovim) ───────────────────
+    nixd                              # nix LSP
+    alejandra                         # nix formatter
+    lua-language-server               # lua LSP
+    stylua                            # lua formatter
+    nodePackages.typescript-language-server
+    nodePackages.vscode-langservers-extracted  # html/css/json LSP
   ];
 }
