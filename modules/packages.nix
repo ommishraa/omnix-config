@@ -25,7 +25,7 @@
         "z"
         "fzf"
         "direnv"
-        "thefuck"
+        "pay-respects"
         "colored-man-pages"
         "command-not-found"
         "copypath"
@@ -115,7 +115,7 @@
     zoxide          # smart cd
     eza             # better ls
     bat             # better cat
-    thefuck         # auto-fix commands
+    pay-respects         # auto-fix commands
     tldr            # simple man pages
     direnv          # auto .env loader
 
