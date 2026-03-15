@@ -7,6 +7,7 @@
     ../modules/hyprland.nix
     ../modules/packages.nix
     ../modules/sddm.nix
+    ../modules/firefox.nix
   ];
 
   # --- Bootloader ---
@@ -17,7 +18,7 @@
   boot.kernelParams = [ "nvidia-drm.modeset=1" ];
 
   # --- Networking ---
-  networking.hostName            = "nixos";
+  networking.hostName             = "nixos";
   networking.networkmanager.enable = true;
 
   # --- Timezone ---
@@ -60,11 +61,11 @@
 
   # --- Wayland + NVIDIA environment variables ---
   environment.sessionVariables = {
-    NIXOS_OZONE_WL          = "1";
-    WLR_NO_HARDWARE_CURSORS = "1";
-    GBM_BACKEND             = "nvidia-drm";
+    NIXOS_OZONE_WL            = "1";
+    WLR_NO_HARDWARE_CURSORS   = "1";
+    GBM_BACKEND               = "nvidia-drm";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-    LIBVA_DRIVER_NAME       = "nvidia";
+    LIBVA_DRIVER_NAME         = "nvidia";
   };
 
   # --- System version ---
