@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 # hypr/scripts/theme-switch.sh
 # Switch kitty color theme on the fly
 # Usage: theme-switch.sh [theme-name]
