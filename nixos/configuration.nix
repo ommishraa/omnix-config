@@ -18,7 +18,7 @@
   boot.kernelParams = [ "nvidia-drm.modeset=1" ];
 
   # --- Networking ---
-  networking.hostName             = "nixos";
+  networking.hostName              = "nixos";
   networking.networkmanager.enable = true;
 
   # --- Timezone ---
@@ -54,18 +54,21 @@
   };
 
   # --- Programs ---
-  programs.zsh.enable = true;
+  programs.zsh.enable   = true;
+  programs.dconf.enable = true;
 
   # --- Allow unfree packages ---
   nixpkgs.config.allowUnfree = true;
 
-  # --- Wayland + NVIDIA environment variables ---
+  # --- Wayland + NVIDIA + Cursor environment variables ---
   environment.sessionVariables = {
     NIXOS_OZONE_WL            = "1";
     WLR_NO_HARDWARE_CURSORS   = "1";
     GBM_BACKEND               = "nvidia-drm";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     LIBVA_DRIVER_NAME         = "nvidia";
+    XCURSOR_THEME             = "rose-pine-cursor";
+    XCURSOR_SIZE              = "24";
   };
 
   # --- System version ---

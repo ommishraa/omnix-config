@@ -112,6 +112,7 @@
 
     # themes
     rose-pine-cursor
+    papirus-icon-theme
     hyprcursor
     glib
     coreutils
